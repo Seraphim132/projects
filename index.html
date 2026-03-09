@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+        <title>Product hunt</title>
+    </head>
+    <body>
+        
+        <div class=" w-380 h-20 flex flex-row items-center bg-white shadow-[0px_0px_2px_grey] ">
+            <div class="flex flex-row items-center">    
+                <div class="flex flex-row items-center ml-37 max-md:ml-7 gap-3 ">
+                    <i class=" fa-brands fa-product-hunt text-[#FF6154] text-[41px]"></i>
+                
+
+                    <!-- Modal toggle -->
+                    <div data-modal-target="default-modal" data-modal-toggle="default-modal" class="md:contents ml-4 bg-[#F2F4F7] w-52 h-11 pr-13 pl-3 rounded-[20px] flex flex-row text-[#85889C] justify-start gap-1 items-center text-[16px] text-bold" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i> Search ( ctrl + k )
+                    </div>
+
+                    <!-- Main modal -->
+                    <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden  overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-210 max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-white rounded-lg shadow-sm dark:bg-white-700">
+                                <!-- Modal header -->
+                                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-black border-black">
+                                    <div class="ml-4 bg-transparent w-100 h-11 pr-13 pl-3 rounded-[20px] flex flex-row text-[#85889C] justify-start gap-1 items-center text-[16px] text-bold">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input class="bg-transparent active:border-none active:outline-none outline-none border-none w-100 focus:border-white focus:outline-none" placeholder="Search for products, launches, or people..." type="text">
+                                    </div>
+                                
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+                                    <h3 class="text-[13px] font-semibold dark:text-[#4B587C]">
+                                        POPULAR LAUNCH TAGS
+                                    </h3>
+                                    <div class="text-[dark blue] text-[12px] flex flex-row gap-5">
+                                        <button class="rounded-[10px] bg-[#F5F8FF] w-34 h-7">
+                                            Artificial Intelligence
+                                        </button>
+                                        <button class="rounded-[10px] bg-[#F5F8FF] w-24 h-7">
+                                            Productivity
+                                        </button>
+                                        <button class="rounded-[10px] bg-[#F5F8FF] w-30 h-7">
+                                            Developer Tools
+                                        </button>
+                                        <button class="rounded-[10px] bg-[#F5F8FF] w-17 h-7">
+                                            Github
+                                        </button>
+                                        <button class="rounded-[10px] bg-[#F5F8FF] w-26 h-7">
+                                            Open Source
+                                        </button>
+                                    </div>
+                                    <a href="#" class="text-[#FF7C72] text-[12px] font-bold"> View All Launch tags</a>
+                                    <h4 class="text-[#4B587C] mt-[20px]">
+                                        PRODUCT CATEGORIES
+                                    </h4>
+                                    <div class="w-190 h-32 p-4 border border-[#D9E1EC] rounded-[10px]  ">
+                                        <div class="flex flex-row justify-between my-[10px] ml-2">
+                                            <a href="#" class="text-[#21293C] font-semibold text-[13px]">Productivity</a>
+                                            <a href="#" class="text-[#FF7C72] text-[12px] font-bold">View all</a>
+                                        </div>
+                                        <div class="flex flex-row mb-[10px] text-[14px]">
+                                            <a href="#" class=" ml-2 mr-22 text-[#616C8C]">Note and writing apps</a>
+                                            <a href="#" class=" mr-22 text-[#616C8C]">Project management software</a>
+                                            <a href="#" class="  text-[#616C8C]">Knowledge base software</a>
+                                        </div>
+                                        <div class="flex text-[14px]">
+                                            <a href="#" class=" ml-2 mr-12 text-[#616C8C]">Team collaboration software</a>
+                                            <a href="#" class="  mr-43 text-[#616C8C]">Writing assistants</a>
+                                            <a href="#" class="  text-[#616C8C]">Search</a>
+                                        </div>
+                                    </div>
+                                    <div class="w-190 h-32 p-4 border border-[#D9E1EC] rounded-[10px] ">
+                                        <div class="flex flex-row justify-between my-[10px] ml-2">
+                                            <a href="#" class="text-[#21293C] font-semibold text-[13px]">Engineering & Development</a>
+                                            <a href="#" class="text-[#FF7C72] text-[12px] font-bold">View all</a>
+                                        </div>
+                                        <div class="flex flex-row mb-[10px]">
+                                            <a href="#" class=" ml-2 mr-30 text-[14px] text-[#616C8C]">Automation tools</a>
+                                            <a href="#" class=" mr-42 text-[14px] text-[#616C8C]">AI Coding Agents</a>
+                                            <a href="#" class="text-[14px] text-[#616C8C]">Unified API</a>
+                                        </div>
+                                        <div class="flex flex-row text-[14px]">
+                                            <a href="#" class="ml-2 mr-31 text-[#616C8C]">Website builders</a>
+                                            <a href="#" class="mr-50 text-[#616C8C]">Predictive AI</a>
+                                            <a href="#" class=" text-[#616C8C]">Testing and QA software</a>
+                                        </div>
+                                    </div>
+                                    <div class="w-190 h-32 p-4 border border-[#D9E1EC] rounded-[10px]  ">
+                                        <div class="flex flex-row justify-between my-[10px] ml-2">
+                                            <a href="#" class="text-[#21293C] font-semibold text-[13px]">Design & Creative</a>
+                                            <a href="#" class="text-[#FF7C72] text-[12px] font-bold">View all</a>
+                                        </div>
+                                        <div class="flex flex-row  mb-[10px] text-[14px]">
+                                            <a href="#" class="ml-2 mr-26 text-[#616C8C]">AI Generative Media</a>
+                                            <a href="#" class="mr-39 text-[#616C8C]">Graphic design tools</a>
+                                            <a href="#" class=" text-[#616C8C]">Video editing</a>
+                                        </div>
+                                        <div class="flex flex-row text-[14px]">
+                                            <a href="#" class="ml-2 mr-31 text-[#616C8C]">Design resources</a>
+                                            <a href="#" class="mr-50 text-[#616C8C]">Photo editing</a>
+                                            <a href="#" class=" text-[#616C8C]">Design inspiration websites</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-[#FF7C72] text-[12px] font-bold">View All Product categories</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            <div class="flex flex-row items-center max-md:hidden">    
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="max-md:hidden ml-15 text-[#474354] hover:text-[#FF6154] transition-all transition-normal duration-500 ease-in-out delay-[0s] bg-blue-700/700 hover:bg-blue-800/800 focus:ring-4 focus:outline-none focus:ring-blue-300/300 font-medium rounded-lg text-[16px] px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600/600 dark:hover:bg-blue-700/700 dark:focus:ring-blue-800/800" type="button">Best Products <svg class="w-2.5 h-2.5 ms-2 hover:rotate-[270deg] transition-all transition-normal duration-500 ease-in-out delay-[0s]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 13 9">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                        <a href="cloudflare.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">cloudflare</a>
+                    </li>
+                    <li>
+                        <a href="salesforce.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">salesforce</a>
+                    </li>
+                    </ul>
+                </div>
+                
+                    <button id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" class=" text-[#474354] hover:text-[#FF6154] transition-all transition-normal duration-500 ease-in-out delay-[0s] bg-blue-700/700 hover:bg-blue-800/800 focus:ring-4 focus:outline-none focus:ring-blue-300/300 font-medium rounded-lg text-[16px] px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600/600 dark:hover:bg-blue-700/700 dark:focus:ring-blue-800/800" type="button">Launches <svg class="w-2.5 h-2.5 ms-2 hover:rotate-[270deg] transition-all transition-normal duration-500 ease-in-out delay-[0s]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 13 9">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                    </svg>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton1">
+                        <li>
+                            <a href="discord.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Discord</a>
+                        </li>
+                        <li>
+                            <a href="reddit.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">reddit</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2" class=" text-[#474354] hover:text-[#FF6154] transition-all transition-normal duration-500 ease-in-out delay-[0s] bg-blue-700/700 hover:bg-blue-800/800 focus:ring-4 focus:outline-none focus:ring-blue-300/300 font-medium rounded-lg text-[16px] px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600/600 dark:hover:bg-blue-700/700 dark:focus:ring-blue-800/800" type="button">News <svg class="w-2.5 h-2.5 ms-2 hover:rotate-[270deg] transition-all transition-normal duration-500 ease-in-out delay-[0s]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 13 9">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                    </svg>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton2">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <button id="dropdownDefaultButton3" data-dropdown-toggle="dropdown3" class="text-[#474354] hover:text-[#FF6154] transition-all transition-normal duration-500 ease-in-out delay-[0s] bg-blue-700/700 hover:bg-blue-800/800 focus:ring-4 focus:outline-none focus:ring-blue-300/300 font-medium rounded-lg text-[16px] px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600/600 dark:hover:bg-blue-700/700 dark:focus:ring-blue-800/800" type="button">Forums <svg class="w-2.5 h-2.5 ms-2 hover:rotate-[270deg] transition-all transition-normal duration-500 ease-in-out delay-[0s]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 13 9">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                    </svg>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdown3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton3">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="text-[#474354] font-medium hover:text-[#FF6154] transition-all transition-normal duration-500 ease-in-out delay-[0s]">Advertise</a>
+                </div>
+                <div class="ml-17 text-[17px] font-medium " >
+                <button class="w-32 h-10 mr-5 text-[#344054] border border-[#E5E7EC] shadow-[0px_0px_2px_grey] rounded-[20px] hover:bg-[#F9FAFB] transition-all transition-normal duration-500 ease-in-out delay-[0s] "> <i class="fa-regular fa-envelope"></i> subscribe</button>
+                <button class="w-25 h-10 mr-7 text-white bg-[#FF6154] rounded-[40px]"> <i class="fa-solid fa-arrow-right-to-bracket"></i> sign in</button>
+                </div>
+            </div>
+            
+        </div>   
+        <div class="mt-[140px] ml-38 flex flex-row gap-20 items-center max-md:ml-3  ">
+            <div class="">
+                <h1 class="text-[48px] w-150 font-bold leading-[1.19] text-[#21293C] max-md:text-[24px] max-md:w-75">
+                    Reach millions of early <br>
+                    adopters on <span class="text-[#FF6154]">Product Hunt</span>
+                </h1>
+                <p class="font-thin text-[#6865AA] text-[18px] mt-3">
+                    Our advertising options will help you build traction with the most influential <br>
+                    early adopters on the web
+                </p>
+            </div>    
+            <img class="w-100 ml-18 max-md:hidden" src="1st woman.avif" alt="">
+        </div>
+        <button class="mt-3 ml-41 max-md:ml-3 text-[16px] font-medium text-[#344054] w-38 h-10 border border-[#D0D5DD] shadow-[0px_0px_2px_grey] rounded-[20px] hover:bg-[#F9FAFB] transition-all transition-normal duration-500 ease-in-out delay-[0s]">
+            Get Started Now
+        </button>
+        <p class="text-[#B7B8C3] text-center mt-21 text-[18px]">
+            Trusted by
+        </p>
+        <div class="flex flex-row w-[100px] justify-around ml-[3px] ">
+            <img class="scale-40 max-md:scale-20" src="flatfile.avif" alt="">
+            <img class="scale-50 max-md:scale-25" src="stripe.avif" alt="">
+            <img class="scale-50 max-md:scale-25" src="mixpanel.avif" alt="">
+            <img class="scale-50 max-md:scale-25" src="sprig.avif" alt="">
+            <img class="scale-35 max-md:scale-18" src="veed.avif" alt="">
+        </div>
+        <p class="text-black font-bold text-[30px] text-center mt-16 max-md:text-[20px]">
+            Find new customers
+        </p>
+        <p class="text-[#4B587C] text-center mt-3 leading-4.5 max-md:text-[13px]">
+            Advertising on Product Hunt helps you grow awareness, trials and usage of your <br>
+            product by reaching millions of the most influential early adopters and techies <br>
+            around the globe.
+        </p>
+        <div class="flex flex-row mt-14 max-md:flex-col">
+            <div class="border border-[#EFF0F2] shadow-[0px_0px_2px_grey] flex flex-col text-left justify-center pl-3 pr-15 py-7 mr-3 ml-3">
+                <h3 class="text-[#FF6154] font-medium text-[18px]">
+                    800k
+                </h3>
+                <p class="text-[#4B587C] text-[14px]">
+                    newsletter subscribers
+                </p>
+            </div>
+            <div class="border border-[#EFF0F2] shadow-[0px_0px_2px_grey] flex flex-col text-left justify-center pl-3 pr-15 py-7 mr-3">
+                <h3 class="text-[#FF6154] font-bold">
+                    Millions
+                </h3>
+                <p class="text-[#4B587C]">
+                    of monthly pageviews
+                </p>
+            </div>
+            <div class="border border-[#EFF0F2] shadow-[0px_0px_2px_grey] flex flex-col text-left justify-center pl-3 pr-15 py-7 mr-3">
+                <h3 class="text-[#FF6154] font-bold">
+                    Top roles
+                </h3>
+                <p class="text-[#4B587C]">
+                    Founder, Indie Maker, IC, Director, VP
+                </p>
+            </div>
+            <div class="border border-[#EFF0F2] shadow-[0px_0px_2px_grey] flex flex-col text-left justify-center pl-3 pr-15 py-7 mr-3">
+                <h3 class="text-[#FF6154] font-bold">
+                    Top Specialities
+                </h3>
+                <p class="text-[#4B587C]">
+                    Engineer, Design, Product, Marketing, Sales
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-row ml-3 mt-8 border border-[#EFF0F2] shadow-[0px_0px_2px_grey] w-265 pl-15 pt-5">
+            <div class="m-3">
+                <h1 class="text-[#21293C] text-[30px] font-bold mt-3">
+                    Basic display campaign
+                </h1>
+                <p class="font-normal text-[#4B587C] mt-3 leading-4.5 w-135">
+                    Test the response of our community to your product, event or service with a <br>
+                    simple, self-serve campaign
+                </p>
+                <button class=" mt-8 ml-4 border border-[#E5E7EC] w-40 h-13 rounded-[20px] shadow-[0px_0px_2px_grey] hover:bg-[#F9FAFB] transition-all transition-normal duration-500 ease-in-out delay-[0s]">
+                    Get Started Now
+                </button>
+            </div>
+            <img class="w-105 mb-0" src="pass.avif" alt="">
+        </div>
+        <div class="flex flex-row ml-3 mt-8 border border-[#EFF0F2] shadow-[0px_0px_2px_grey] w-265 pl-15 pt-0">
+            <div class="m-5">
+                <h1 class="text-[#21293C] text-[30px] font-bold mt-3">
+                    Momentum display campaign
+                </h1>
+                <p class="font-normal text-[#4B587C] mt-3 leading-4.5 w-135">
+                    Maximize your launch day efforts by running a self serve campaign in the <br>
+                    days after you launch to stay top of mind and reach your target audience.
+                </p>
+                <button class=" mt-8 ml-4 border border-[#E5E7EC] w-40 h-13 rounded-[20px] shadow-[0px_0px_2px_grey] hover:bg-[#F9FAFB] transition-all transition-normal duration-500 ease-in-out delay-[0s]">
+                    Get Started Now
+                </button>
+            </div>
+            <img class="w-105 mb-5" src="momentum.avif" alt="">
+        </div>
+        <div class="flex flex-row ml-3 mt-8 border border-[#EFF0F2] shadow-[0px_0px_2px_grey] w-265 pl-15 pt-0">
+            <div class="m-5">
+                <h1 class="text-[#21293C] text-[30px] font-bold mt-3">
+                    Managed campaigns
+                </h1>
+                <p class="font-normal text-[#4B587C] mt-3 leading-4.5 w-135">
+                    Maximize your launch day efforts by running a self serve campaign in the <br>
+                    days after you launch to stay top of mind and reach your target audience.
+                </p>
+                <button class=" mt-8 ml-4 border border-[#E5E7EC] w-40 h-13 rounded-[20px] shadow-[0px_0px_2px_grey] hover:bg-[#F9FAFB] transition-all transition-normal duration-500 ease-in-out delay-[0s]">
+                    Get Started Now
+                </button>
+            </div>
+            <img class="w-105 mb-0" src="managed.avif" alt="">
+        </div>
+        <div class="text-center mt-23 mb-15">
+            <h1 class="text-[30px] font-bold">
+                Success stories
+            </h1>
+            <p class="font-normal text-[#4B587C]  leading-4.5 mt-3">
+                See how other startups and growth companies have leveraged Product Hunt's <br>
+                advertising opportunities to reach their audiences.
+            </p>
+        </div>
+        
+
+        <div id="default-carousel" class="relative w-300 mx-auto" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-100 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="remotebase.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="switchboard.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="lemon.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="appwrite.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse mt-10">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        <div class=" text-center ">
+            <h1 class="mt-23 font-bold text-[30px]">
+                Connect with our community
+            </h1>
+            <p class="text-[#4B587C]  leading-4.5 mt-3" >
+                Work with our dedicated team to gain awareness with our most engaged users by creating <br>
+                a custom package of advertising option
+            </p>
+            <button class="mt-11 border border-[#E5E7EC] w-40 h-13 rounded-[20px] shadow-[0px_0px_2px_grey] hover:bg-[#F9FAFB] transition-all transition-normal duration-500 ease-in-out delay-[0s]">
+                Get Started Now
+            </button>
+        </div>
+        <div class="flex flex-row justify-center items-center mt-16">
+            <div class="border border-[#EFF0F2] shadow-[0px_0px_2px_grey] flex flex-col text-left justify-center h-40 pl-5 pr-20 py-10 mr-3 ">
+                <h1 class="text-[18px] font-bold mb-5">
+                    Newsletters
+                </h1>
+                <p class="text-[15px] text-[#4B588D]">
+                    Maximize awareness by sponsoring content in <br>
+                    our <a class="text-[#6770FF]" href="#">industry-leading daily tech roundup</a> that's <br>
+                    read by more than 500K subscribers or one of <br>
+                    our targeted, interest-based newsletters.
+                </p>
+            </div>
+            <div class="border border-[#EFF0F2] shadow-[0px_0px_2px_grey] flex flex-col text-left justify-center h-40 pl-5 pr-20 py-10 mr-3 ml-3">
+                <h1 class="text-[18px] font-bold mb-5">
+                   Promoted discussions and AMA
+                </h1>
+                <p class="text-[15px] text-[#4B588D]">
+                    Work with us to position and feature a promoted <br>
+                    <a class="text-[#6770FF]" href="#">discussion</a> or AMA to drive awareness and <br>
+                    conversation about a chosen topic. <br>
+                </p>
+            </div>
+        </div>
+        <div class="border border-[#EFF0F2] shadow-[0px_0px_2px_grey] flex flex-col text-left justify-center mx-auto h-40 pl-5 pr-20 py-10 mt-5   w-110">
+                <h1 class="text-[18px] font-bold mb-5">
+                   Community events
+                </h1>
+                <p class="text-[15px] text-[#4B588D]">
+                    Partner with us to build out, promote, host, and <br>
+                    distribute digital event content that will resonate <br>
+                    with the Product Hunt community to drive <br>
+                    awareness, engagement and leads.
+                </p>
+        </div>
+        <div class="bg-[#101828] mt-14 pt-7 pb-7">
+
+            <h1 class="text-[#86A2B3] ml-44 mb-5">
+                     Top Product Categories
+            </h1>
+            <div class="flex flex-row text-[14px]">
+                
+                <div class="ml-44 flex flex-col " >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Engineering & Development</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Vibe Coding Tools</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI Coding Agents</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI Code Editors</a>
+                </div>
+                <div class="ml-26 flex flex-col" >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">LLMs</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI Chatbots</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI infrastructure Tools</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Prompt Engineering Tools</a>
+                </div>
+                <div class="ml-35 flex flex-col" >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Productivity</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI notetakers</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Note and writing apps</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Team collaboration software</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Search</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI Workflow Automation</a>
+                </div>
+                <div class="ml-26 flex flex-col" >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Marketing & Sales</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Lead generation software</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Marketing automation platforms</a>
+                </div>
+            </div>
+            <div class="flex flex-row text-[14px] mt-5">
+                
+                <div class="ml-44 flex flex-col" >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Design & Creative</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Video editing</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Design resources</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Graphic design tools</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI Generative Media</a>
+                </div>
+                <div class="ml-39 flex flex-col" >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Social & Community</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Social Networking</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Professional networking platforms</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Community management</a>
+                </div>
+                <div class="ml-22 flex flex-col " >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Finance</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Accounting software</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Fundraising resources</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Investing</a>
+                </div>
+                <div class="ml-35 flex flex-col " >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">AI Voice Agents</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI Voice Agents</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white font-bold mb-2">See All Categories >></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-[#101828] shadow-[1px_0px_2px_grey] pt-7 pb-1">
+            <div class="flex flex-row text-[14px]">
+                
+                 <div class="ml-44 flex flex-col " >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Trending categories</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Vibe Coding Tools</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI Dictation Apps</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">AI notetakers</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Code Review Tools</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">No-code Platforms</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Figma Plugins</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Static site generators</a>
+                </div>
+                <div class="ml-38 flex flex-col " >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Top reviewed</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Lovable</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">n8n</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Attio</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">PostHog</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Vapi</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Granola</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Raycast</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Supabase</a>
+                </div>
+                <div class="ml-55 flex flex-col " >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Trending products</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Lovable</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Screen Studio</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">bolt.new</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Wispr Flow</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Framer</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Replit</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Vapi</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Granola</a>
+                </div>
+                <div class="ml-41 flex flex-col " >
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-[#86A2B3] mb-3">Top forum threads</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Cursor or Claude Code?</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">POLL: Domain or product first?</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">YC deadline in 2 weeks; Who's applying?</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">We Got into YC, Got Kicked Out, and Fought ...</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">How Wispr Flow found PMF through pivot</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Best Vibe Coding tool so far?</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Landing page roast - 48 hours only</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s] text-white mb-2">Fix your tagline with the PH CEO</a>
+                </div>
+            </div>
+            <div class=" flex flex-row text-white justify-around mx-auto items-center text-[14px] mt-13 w-300 mb-10">
+                <p>
+                    © 2026 Product Hunt
+                </p>
+                <div class="flex flex-row gap-5 ">
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s]">Newsletter</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s]">Apps</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s]"> About</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s]">F&Q</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s]">Terms</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s]">Privacy & Cookies</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s]"> Privacy Choices</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s]">Advertise</a>
+                    <a href="#" class="hover:underline transition-all transition-normal duration-500 ease-in-out delay-[0s]">lims.txt</a>
+                </div>
+                <p>
+                    Contact us: hello@producthunt.com
+                </p>
+                <div>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    </body>
+</html>
